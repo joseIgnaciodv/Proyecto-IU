@@ -34,6 +34,10 @@ header{
     height: 32px;
 }
 
+#prueba:hover{
+    fill: #e74c3d;
+}
+
 .precio-coche{
     display: flex;
     flex-direction: column;
@@ -46,8 +50,9 @@ header{
     font-weight: bold;
 }
 
-#logo{
+header #logo{
     margin-left: 10px;
+    margin-bottom: 10px;
 }
 
 #menu{
