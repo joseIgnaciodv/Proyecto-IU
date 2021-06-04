@@ -4,52 +4,6 @@ header{
     width: 100%;
     background-color: #D90429;
 }
-
-.tarjeta{
-    margin-top: 10px;
-    margin-bottom: 10px;
-    width: 100%;
-    height: 30.5vh;
-    display: flex;
-    justify-content: space-between;
-    background-color: aqua;
-}
-
-.tarjeta:hover{
-    box-shadow: 5px 5px 5px red;
-}
-
-.espacio-imagen{
-    width: 20vw;
-    height: 20vh;
-}
-
-.espacio-imagen img{
-    width: 100%;
-    height: auto;
-}
-
-.favorito{
-    width: 32px;
-    height: 32px;
-}
-
-#prueba:hover{
-    fill: #e74c3d;
-}
-
-.precio-coche{
-    display: flex;
-    flex-direction: column;
-}
-
-.precio-coche #precio{
-    color: #e74c3d;
-    font-family: Montserrat,Open Sans,Helvetica,Arial,sans-serif;
-    font-size: 24px;
-    font-weight: bold;
-}
-
 header #logo{
     margin-left: 10px;
     margin-bottom: 10px;
@@ -59,7 +13,7 @@ header #logo{
     width: 32px;
     height: 32px;
     margin-right: 10px;
-    margin-top: 10px;
+    margin-top: 35px;
     display: none;
 }
 
@@ -76,28 +30,139 @@ footer{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+.tarjeta{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 34px;
+    display: flex;
+    background-color: lightgray;
+
+}
+
+.primera-fila{
+    display: flex;
+    justify-content: space-between;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.favorito{
+    margin-right: 10px;
+    /* justify-content: flex-end; */
+}
+
+.marca{
+    margin-left: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.precio{
+    font-size: 24px;
+    color: #EF233C;
+    margin-left: 5px;
+}
+
+.titulo-precio{
+    font-size: 24px;
+}
+
+.segunda-fila{
+    display: flex;
+    margin-top: 30px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+.segunda-fila span{
+    font-size: 24px;
+    border-right: 1.5px solid black;
+    padding-right: 5px;
+    margin-left: 5px;
+}
+
+.primera-fila img{
+    width: 32px;
+    height: 32px;
+}
+
+.contenedor{
+    width: 100%;
+    display: block;
+    padding: 3px 10px;
+}
+
+.espacio-imagen{
+    width: 30vw;
+}
+
+.espacio-imagen img{
+    border-radius: 34px 0px 0px 34px;
+    width: 100%;
+}
+
+.precio-coche{
+    display: flex;
+    margin-left: 10px;
+}
+
+
 
 @media screen and (max-width: 576px) {
     .tarjeta{
-        margin-top: 10px;
-        margin-bottom: 10px;
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%;
-        height: 400px;
+        display: block;
+        height: 350px;
         border: 1px solid;
         border-radius: 34px;
-        background-color: lightblue;
-
     }
 
     .espacio-imagen{
         width: 100%;
-        height: 20vh;
     }
-
+    
     .espacio-imagen img{
         border-radius: 34px 34px 0px 0px;
+        width: 100%;
+    }
+    
+    .primera-fila{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .segunda-fila{
+        margin-top: 15px;
+        justify-content: center;
+    }
+
+    .segunda-fila span{
+        font-size: 16px;
+    }
+    
+    .primera-fila img{
+        width: 16px;
+        height: 16px;
+    }
+
+    .precio{
+        font-size: 16px;
+    }
+
+    .marca{
+        font-size: medium;
+        font-weight: bold;
+    }
+
+    .titulo-precio{
+        font-size: 16px;
+    }
+
+    .favorito{
+        margin: 0;
+    }
+
+    .contenedor{
+        width: auto;
+        padding: 3px 12px;
     }
 
     #menu{
