@@ -2,18 +2,6 @@ function buscar(){
     var i = 0
     var json = [
         {
-           "tipo_coche": "Compacto",
-           "tipo_cambio": "Manual",
-           "combustible": "Gasolina",
-           "marca": "Hyundai",
-           "modelo": "Tucson",
-           "imagen": "imagenes/hyundai.jpg",
-           "precio": "",
-           "localidad": "Madrid",
-           "año": "2015",
-           "km": "45350 km"
-        },
-        {
             "tipo_coche": "Compacto",
             "tipo_cambio": "Manual",
             "combustible": "Gasolina",
@@ -24,30 +12,6 @@ function buscar(){
             "localidad": "Madrid",
             "año": "2010",
             "km": "45350 km"
-         },
-         {
-            "tipo_coche": "SUV",
-            "tipo_cambio": "Manual",
-            "combustible": "Gasolina",
-            "marca": "Hyundai",
-            "modelo": "Tucson",
-            "imagen": "imagenes/hyundai.jpg",
-            "precio": "",
-            "localidad": "Madrid",
-            "año": "2021",
-            "km": "45350 km"
-         },
-         {
-            "tipo_coche": "SUV",
-            "tipo_cambio": "Manual",
-            "combustible": "Gasolina",
-            "marca": "Hyundai",
-            "modelo": "Tucson",
-            "imagen": "imagenes/hyundai.jpg",
-            "precio": "",
-            "localidad": "Madrid",
-            "año": "2019",
-            "km": "70200 km"
          },
          {
             "tipo_coche": "Compacto",
@@ -72,12 +36,24 @@ function buscar(){
             "localidad": "Cordoba",
             "año": "2017",
             "km": "68.487 km"
+         },
+         {
+            "tipo_coche": "SUV",
+            "tipo_cambio": "Automatico",
+            "combustible": "Diesel",
+            "marca": "Audi",
+            "modelo": "Q3 2.0 TDI Sport",
+            "imagen": "imagenes/audi.jpg",
+            "precio": "29.500",
+            "localidad": "Cordoba",
+            "año": "2018",
+            "km": "48.767 km"
          }
      ]
 
      var header = document.getElementsByTagName("header")
      for(i; i < json.length; i++){
-        if(json[i].tipo_coche == "Compacto"){
+        if(json[i].tipo_coche == "Compacto" || json[i].tipo_coche == "SUV"){
             var tarjeta = document.createElement("div")
             tarjeta.setAttribute("class", "tarjeta")
             var espacioIm = document.createElement("div")
@@ -121,6 +97,9 @@ function buscar(){
             localidad.setAttribute("class", "localidad")
             localidad.textContent = json[i].localidad
 
+            var enlace = document.createElement("a")
+            enlace.href = "descripcion_vehiculo.html"
+
             espacioIm.appendChild(imagen)
 
             precioCoche.appendChild(tituloPrecio)
@@ -141,11 +120,16 @@ function buscar(){
             tarjeta.appendChild(espacioIm)
             tarjeta.appendChild(contenedor)
 
-            header[0].parentNode.insertBefore(tarjeta, header[0].nextSibling)
+            enlace.appendChild(tarjeta)
+
+            header[0].parentNode.insertBefore(enlace, header[0].nextSibling)
         }
      }
 }
 
 function tiempo(){
-    setTimeout(buscar, 3000)
+   setTimeout(buscar, 500)
 }
+
+
+
