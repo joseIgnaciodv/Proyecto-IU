@@ -20,13 +20,7 @@ footer{
 ul {
     list-style-type: none;
 }
-.card{
 
-    margin-top: 20px;
-    margin-bottom: 15px;
-
-
-}
 .row{
     margin-bottom: 30px;
 }
@@ -34,8 +28,8 @@ ul {
 
 #imagen1{
     
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     background-color: white;
 }
 #imagen2{
@@ -70,8 +64,13 @@ ul {
 #contenedor{
     display: flex;
 }
+p{
+    text-align: justify;
+  text-justify: inter-word;
+}
 
 #imagen{
+    
     margin-left: 10px;
     margin-right: 10px;
 }
