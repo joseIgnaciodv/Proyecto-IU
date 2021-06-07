@@ -21,12 +21,27 @@ header #logo{
     justify-content: left;
 }
 
+.combustible{
+    margin-top: 30px;
+    display: flex;
+    justify-content: left;
+}
+
+#diesel{
+    margin-right: 25px;
+    margin-left: 25px;
+}
+
+#gasolina{
+    margin-left: 65px;
+    margin-right: 25px;
+}
+
 .tipo-coche{
     border-radius: 10px;
     width: 150px;
     height: auto;
-    display: flex;
-    flex-direction: column;
+    display: block;
     text-align: center;
     opacity: 0.5;
     transition: 0.3s;
@@ -50,8 +65,7 @@ header #logo{
     border-radius: 10px;
     width: 100px;
     height: auto;
-    display: flex;
-    flex-direction: column;
+    display: block;
     text-align: center;
     opacity: 0.5;
     transition: 0.3s;
@@ -60,6 +74,35 @@ header #logo{
 .tipo-cambio:hover{
     opacity: 1;
     cursor: pointer;
+}
+
+.tipo-combustible span{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.tipo-combustible{
+    border-radius: 10px;
+    width: 100px;
+    height: auto;
+    display: block;
+    text-align: center;
+    opacity: 0.5;
+    transition: 0.3s;
+}
+
+.tipo-combustible:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+a:link{
+    color: black;
+    text-decoration: none;
+}
+
+a:visited{
+    color: black;
+    text-decoration: none;
 }
 
 #manual{
@@ -90,6 +133,7 @@ header #logo{
 }
 
 .boton:hover{
+    cursor: pointer;
     opacity: 0.6;
 }
 
@@ -116,30 +160,46 @@ footer{
     width: 32px;
     height: 32px;
     margin-right: 10px;
-    margin-top: 10px;
+    margin-top: 35px;
     display: none;
 }
 
 @media screen and (max-width: 576px) {
     .coches{
         display: block;
+        margin: auto;
     }
-    .tipo-coche{
-        margin-top: 10px;
-        justify-content: center;
+
+    .tipo-coche{ 
+        margin:  20px auto;
     }
 
     .cambio{
-        display: flex;
-        justify-content: space-between;
+        display: block;
+    }
+
+    .combustible{
+        display: block;
+    }
+
+    .tipo-combustible{
+        margin: 20px auto;
     }
 
     #manual{
-        margin-left: 50px;
+        margin: 20px auto;
     }
 
     #auto{
-        margin-right: 50px;
+        margin: 20px auto;
+    }
+
+    #diesel{
+        margin: 20px auto;
+    }
+
+    #gasolina{
+        margin: 20px auto;
     }
 
     .opcion{

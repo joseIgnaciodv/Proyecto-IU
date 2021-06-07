@@ -5,71 +5,89 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/km0.css">
+    <script src = "js/javacript_pagina.js"></script>
     <title>Coches KM0</title>
 </head>
 <body">
     <header>
-        <img id = "logo" src = "imagenes/logo_gris.png" alt="">
-        <img id = "menu" src = "imagenes/square.png" alt="">
+        <img id = "logo" src = "imagenes/logo_gris.png" alt = "Logo Kilometro66">
+        <img id = "menu" src = "imagenes/square.png" alt = "Logo Menu Hamburguesa">
     </header>
     <h3 class = "opcion">Tipo de Coche</h3>
     <div class = "coches">
-        <a href = "resultados_coches.html">
-            <div class = "tipo-coche">
-                <img src = "imagenes/hatchback.svg" alt="">
-                <span>Compacto</span>
-            </div>
-        </a>
+        
+        <div onclick = "seleccionar(this)" class = "tipo-coche">
+            <input type="checkbox" name = "opcion" id = "Compacto">
+            <img src = "imagenes/hatchback.svg" alt="Coche Compacto">
+            <span>Compacto</span>
+        </div>
 
-        <div class = "tipo-coche">
-            <img src = "imagenes/suv.svg" alt="">
+        <div onclick = "seleccionar(this)" class = "tipo-coche">
+            <input type="checkbox" name = "opcion" id = "SUV">
+            <img src = "imagenes/suv.svg" alt="Coche tipo SUV">
             <span>SUV</span>
         </div>
 
-        <div class = "tipo-coche">
-            <img src = "imagenes/coupe.svg" alt="">
+        <div onclick = "seleccionar(this)" class = "tipo-coche">
+            <input type="checkbox" name = "opcion" id = "Coupe">
+            <img src = "imagenes/coupe.svg" alt="Coche Coupe">
             <span>Coupe</span>
         </div>
 
-        <div class = "tipo-coche">
-            <img src = "imagenes/people_carrier.svg" alt="">
+        <div onclick = "seleccionar(this)" class = "tipo-coche">
+            <input type="checkbox" name = "opcion" id = "Monovolumen">
+            <img src = "imagenes/people_carrier.svg" alt="Coche Monovolumen">
             <span>Monovolumen</span>
         </div>
 
-        <div class = "tipo-coche">
-            <img src = "imagenes/saloon.svg" alt="">
+        <div onclick = "seleccionar(this)" class = "tipo-coche">
+            <input type="checkbox" name = "opcion" id = "Saloon">
+            <img src = "imagenes/saloon.svg" alt="Coche tipo Saloon">
             <span>Saloon</span>
         </div>
 
-        <div class = "tipo-coche">
-            <img src = "imagenes/estate.svg" alt="">
+        <div onclick = "seleccionar(this)" class = "tipo-coche">
+            <input type="checkbox" name = "opcion" id = "Familiar">
+            <img src = "imagenes/estate.svg" alt="Coche Familiar">
             <span>Familiar</span>
         </div>
     </div>
 
     <h3 class = "opcion">Tipo de Cambio</h3>
     <div class = "cambio">
-        <div class = "tipo-cambio" id = "manual">
-            <img src = "imagenes/manual-transmission.svg" alt="">
+        <div onclick = "seleccionar(this)" class = "tipo-cambio" id = "manual">
+            <input type="checkbox" name = "opcion" id = "Manual">
+            <img src = "imagenes/manual-transmission.svg" alt="Caja de Cambios Manual">
             <span>Manual</span>
         </div>
 
-        <div class = "tipo-cambio" id = "auto">
-            <img src = "imagenes/gearbox.svg" alt="">
+        <div onclick = "seleccionar(this)" class = "tipo-cambio" id = "auto">
+            <input type="checkbox" name = "opcion" id = "Automatico">
+            <img src = "imagenes/gearbox.svg" alt="Caja de Cambios Automatica">
             <span>Automatico</span>
         </div>
     </div>
     <h3 class = "opcion">Combustible</h3>
     <div class = "combustible">
-        <div class = "tipo-combustible">
+        <div onclick = "seleccionar(this)" class = "tipo-combustible" id = "diesel">
+            <input type="checkbox" name = "opcion" id = "Diesel">
+            <img src = "imagenes/oil.svg" alt="Combustible tipo Diesel">
+            <span>Diesel</span>
+        </div>
 
+        <div onclick = "seleccionar(this)" class = "tipo-combustible" id = "gasolina">
+            <input type="checkbox" name = "opcion" id = "Gasolina">
+            <img src = "imagenes/gas.svg" alt="Combustible tipo Gasolina">
+            <span>Gasolina</span>
         </div>
 
     </div>
 
-    <div class = "espacio-boton">
-        <input class = "boton" type="button" value = "Buscar">
-    </div>
+    <a href = "resultados_coches.html">
+        <div class = "espacio-boton">
+            <input onclick = "devolverOpciones()" class = "boton" type="button" value = "Buscar">
+        </div>
+    </a>
 
     <footer>
         <span id = "texto-footer">KM66 &copy; 2021</span>

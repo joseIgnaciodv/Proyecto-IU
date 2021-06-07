@@ -4,6 +4,144 @@ header{
     width: 100%;
     background-color: #D90429;
 }
+header #logo{
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.coches{
+    margin-top: 30px;
+    display: flex;
+    
+}
+
+.cambio{
+    margin-top: 30px;
+    display: flex;
+    justify-content: left;
+}
+
+.combustible{
+    margin-top: 30px;
+    display: flex;
+    justify-content: left;
+}
+
+#diesel{
+    margin-right: 25px;
+    margin-left: 25px;
+}
+
+#gasolina{
+    margin-left: 65px;
+    margin-right: 25px;
+}
+
+.tipo-coche{
+    border-radius: 10px;
+    width: 150px;
+    height: auto;
+    display: block;
+    text-align: center;
+    opacity: 0.5;
+    transition: 0.3s;
+    margin-right: 40px;
+}
+
+.tipo-coche:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.tipo-coche span{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.tipo-cambio span{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.tipo-cambio{
+    border-radius: 10px;
+    width: 100px;
+    height: auto;
+    display: block;
+    text-align: center;
+    opacity: 0.5;
+    transition: 0.3s;
+}
+
+.tipo-cambio:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.tipo-combustible span{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.tipo-combustible{
+    border-radius: 10px;
+    width: 100px;
+    height: auto;
+    display: block;
+    text-align: center;
+    opacity: 0.5;
+    transition: 0.3s;
+}
+
+.tipo-combustible:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+a:link{
+    color: black;
+    text-decoration: none;
+}
+
+a:visited{
+    color: black;
+    text-decoration: none;
+}
+
+#manual{
+    margin-right: 25px;
+    margin-left: 25px;
+}
+
+#auto{
+    margin-left: 65px;
+    margin-right: 25px;
+}
+
+.espacio-boton{
+    margin-top: 30vh;
+    margin-bottom: 65px;
+    display: flex;
+    justify-content: center;
+}
+
+.boton{
+    background-color: #EF233C;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: 0.3s;
+    padding: 14px 50px;
+    font-size: 18px
+}
+
+.boton:hover{
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.opcion{
+    margin-top: 30px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+}
 
 footer{
     background-color: #2B2D42;
@@ -22,6 +160,53 @@ footer{
     width: 32px;
     height: 32px;
     margin-right: 10px;
-    margin-top: 10px;
+    margin-top: 35px;
     display: none;
+}
+
+@media screen and (max-width: 576px) {
+    .coches{
+        display: block;
+        margin: auto;
+    }
+
+    .tipo-coche{ 
+        margin:  20px auto;
+    }
+
+    .cambio{
+        display: block;
+    }
+
+    .combustible{
+        display: block;
+    }
+
+    .tipo-combustible{
+        margin: 20px auto;
+    }
+
+    #manual{
+        margin: 20px auto;
+    }
+
+    #auto{
+        margin: 20px auto;
+    }
+
+    #diesel{
+        margin: 20px auto;
+    }
+
+    #gasolina{
+        margin: 20px auto;
+    }
+
+    .opcion{
+        font-size: 16px;
+    }
+
+    #menu{
+        display: block;
+    }
 }
