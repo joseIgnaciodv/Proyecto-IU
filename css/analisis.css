@@ -1,0 +1,116 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #D90429;
+}
+header #logo{
+    margin-left: 10px;
+    margin-bottom: 10px;
+
+}
+footer{
+
+    background-color: #2B2D42;
+    color: #707070;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+ul {
+    list-style-type: none;
+}
+.card{
+
+    margin-top: 20px;
+    margin-bottom: 15px;
+
+
+}
+.row{
+    margin-bottom: 30px;
+}
+
+
+#imagen1{
+    
+    width: 100px;
+    height: 100px;
+    background-color: white;
+}
+#imagen2{
+    
+    height: 200px;
+    width: 200px;
+
+
+}
+#imagen3{
+
+    height: 200px;
+    width: 200px;
+    border-right: 0px;
+    margin-left: 0px;
+}
+#noticia{
+    border-color:white;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+#cartainterna{
+    border-radius: 0px;
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-color: black;
+
+}
+#contenedor{
+    display: flex;
+}
+
+#imagen{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#parrafo{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#texto-footer{
+    font-weight: bold;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#menu{
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+    margin-top: 10px;
+    display: none;
+}
+.espacio-boton{
+    margin-top: 25px;
+
+    display: flex;
+    margin-left: 35px;
+}
+
+.boton{
+    background-color: #EF233C;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: 0.3s;
+    padding: 10px 25px;
+    font-size: 18px
+}
+
+.boton:hover{
+    cursor: pointer;
+    opacity: 0.6;
+}
