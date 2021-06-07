@@ -6,11 +6,141 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href= "css/descripcion.css">
     <script src = "js/javacript_pagina.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <title>Descripcion Vehiculo</title>
 </head>
 <body>
-    <div>
-        
+    <header id = "menu-navegacion">
+        <a id = "inicio" href = "index.html">
+            <img id = "logo" src = "imagenes/logo_gris.png" alt = "Logo Kilometro66">
+        </a>
+        <img id = "menu" src = "imagenes/square.png" alt="">
+    </header>
+    <div class = "nombre-vehiculo">
+        <h2>Ford Mustang</h2>
+        <h3>2.3 EcoBoost 231kW Mustang (Fastback)</h3>
     </div>
+
+    <div class="container">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+          </ol>
+      
+          <div class="carousel-inner">
+            <div class="item active">
+              <img src="imagenes/mustang.jpg" alt="Coche Ford Mustang" style="width:100%;">
+            </div>
+      
+            <div class="item">
+              <img src="imagenes/mustang2.jpg" alt="Ford Mustang de lado" style="width:100%;">
+            </div>
+          
+            <div class="item">
+              <img src="imagenes/mustang3.jpg" alt="Interior Ford Mustang" style="width:100%;">
+            </div>
+          </div>
+    
+          <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+
+
+    <div class = "datos-tecnicos">
+        <span id = "datos">Datos Tecnicos</span>
+        <div class = "contenedor">
+            <div class = "fila" id = "fila-uno">
+                <div class = "campo">
+                    <img src = "imagenes/price-tag.svg" alt="">
+                    <div class = "nombre-campo">
+                        <span>Precio</span>
+                        <span class = "dato">27.500</span>
+                    </div>
+                </div>
+
+                <div class = "campo">
+                    <img src = "imagenes/transmission.svg" alt="">
+                    <div class = "nombre-campo">
+                        <span>Cambio</span>
+                        <span class = "dato">Automatico</span>
+                    </div>
+                </div>
+
+                <div class = "campo">
+                    <img src = "imagenes/car.svg" alt="">
+                    <div class = "nombre-campo">
+                        <span>Motor</span>
+                        <span class = "dato">1598 cc</span>
+                    </div>
+                </div>
+
+                <div class = "campo">
+                    <img src = "imagenes/calendar.svg" alt="">
+                    <div class = "nombre-campo">
+                        <span>Año</span>
+                        <span class = "dato">2017</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "fila" id = "fila-dos">
+                <div class = "campo">
+                    <img src = "imagenes/speedometer.svg" alt="">
+                    <div class = "nombre-campo">
+                        <span>Km</span>
+                        <span class = "dato">48.767</span>
+                    </div>
+                </div>
+
+                <div class = "campo">
+                    <img src = "imagenes/dispenser.svg" alt="">
+                    <div class = "nombre-campo">
+                        <span>Combustible</span>
+                        <span class = "dato">Gasolina</span>
+                    </div>
+                </div>
+
+                <div class = "campo">
+                    <img src = "imagenes/placeholder.svg" alt="">
+                    <div class = "nombre-campo">
+                        <span>Localidad</span>
+                        <span class = "dato">Madrid</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class = "descripcion">
+        <span id = "titulo-descripcion">Descripcion</span>
+        <div class = "descripcion-vehiculo">
+            <p>El Ford Mustang está animado por tres motores diferentes: un cuatro cilindros, 
+                el 2.3 Ecoboost de 290 CV, muy potente y enérgico, y un excelso bloque 5.0 V8 de aspiración atmosférica con 450 CV en el caso del Mustang GT y 
+                460 CV en la variante Mach 1, uno de los mejores motores que se pueden adquirir en la actualidad.Independientemente del motor escogido se puede optar por una caja de cambios manual de 6 velocidades o una transmisión automática de 10 relaciones. En ambos casos la tracción es al eje posterior, 
+                siendo éste otro de los grandes atributos del gigantesco Ford Mustang.Dinámicamente la actual generación del Ford Mustang ha supuesto un salto épico en calidad de rodadura y capacidad dinámica. El Ford Mustang es un vehículo con una gran capacidad de tracción que, evidentemente, 
+                no resulta especialmente ágil debido a su peso y dimensiones, pero que resulta eficaz en vías rápidas y medias. </p>
+        </div>
+    </div>
+
+    <a href = "resultados_coches.html">
+        <div class = "espacio-boton">
+            <input class = "boton" type="button" value = "Comparar">
+        </div>
+    </a>
+    <footer>
+        <span id = "texto-footer">KM66 &copy; 2021</span>
+    </footer>
 </body>
 </html>

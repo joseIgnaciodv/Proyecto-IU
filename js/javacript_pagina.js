@@ -17,7 +17,7 @@ function jsonList(){
           "tipo_cambio": "Manual",
           "combustible": "Diesel",
           "marca": "Honda",
-          "modelo": "1.6 i-DTEC Elegance Navi Pack",
+          "modelo": "Civic 1.6 i-DTEC Elegance Navi Pack",
           "imagen": "imagenes/honda.jpg",
           "precio": "10.990",
           "localidad": "Madrid",
@@ -95,7 +95,19 @@ function jsonList(){
           "localidad": "Sevilla",
           "año": "2011",
           "km": "145.689 km"
-       }
+       },
+       {
+         "tipo_coche": "Compacto",
+         "tipo_cambio": "Manual",
+         "combustible": "Gasolina",
+         "marca": "Ford",
+         "modelo": "Mustang 2.3 EcoBoost 231kW Mustang (Fastback)",
+         "imagen": "imagenes/mustang.jpg",
+         "precio": "27.990",
+         "localidad": "Granada",
+         "año": "2017",
+         "km": "59.990 km"
+      }
    ]
 
    return json
@@ -337,6 +349,92 @@ function buscar(){
      }
 }
 
+function resultados(){
+   var i = 0
+   var json = jsonList()
+   var header = document.getElementsByTagName("header")
+     for(i; i < json.length; i++){
+         var tarjeta = document.createElement("div")
+         tarjeta.setAttribute("class", "tarjeta")
+         var espacioIm = document.createElement("div")
+         espacioIm.setAttribute("class", "espacio-imagen")
+         var imagen = document.createElement("img")
+         imagen.src = json[i].imagen
+
+         var contenedor = document.createElement("div")
+         contenedor.setAttribute("class", "contenedor")
+         var primeraFila = document.createElement("div")
+         primeraFila.setAttribute("class", "primera-fila")
+         var segundaFila = document.createElement("div")
+         segundaFila.setAttribute("class", "segunda-fila")
+         
+         var precioCoche = document.createElement("div")
+         precioCoche.setAttribute("class", "precio-coche")
+         var tituloPrecio = document.createElement("span")
+         tituloPrecio.textContent = "Precio: "
+         tituloPrecio.setAttribute("class", "titulo-precio")
+         var precio = document.createElement("span")
+         precio.setAttribute("class", "precio")
+         precio.textContent = json[i].precio
+
+         var nombre = document.createElement("span")
+         nombre.setAttribute("class", "marca")
+         nombre.textContent = json[i].marca + " " + json[i].modelo
+         var fav = document.createElement("img")
+         fav.src = "imagenes/favourites-filled-star-symbol.png"
+         fav.setAttribute("class", "favorito")
+
+         var anio = document.createElement("span")
+         anio.setAttribute("class", "año")
+         anio.textContent = json[i].año
+         var km = document.createElement("span")
+         km.setAttribute("class", "km")
+         km.textContent = json[i].km
+         var combustible = document.createElement("span")
+         combustible.setAttribute("class", "combustible")
+         combustible.textContent = json[i].combustible
+         var localidad = document.createElement("span")
+         localidad.setAttribute("class", "localidad")
+         localidad.textContent = json[i].localidad
+
+         var datos = document.createElement("div")
+         datos.setAttribute("class", "datos-coche")
+
+         var enlace = document.createElement("a")
+         enlace.href = "descripcion_vehiculo.html"
+         var enlaceFavoritos = document.createElement("a")
+         enlaceFavoritos.href = "favoritos.html"
+
+         espacioIm.appendChild(imagen)
+
+         precioCoche.appendChild(tituloPrecio)
+         precioCoche.appendChild(precio)
+
+         enlaceFavoritos.appendChild(fav)
+
+         primeraFila.appendChild(precioCoche)
+         primeraFila.appendChild(nombre)
+         primeraFila.appendChild(enlaceFavoritos)
+
+         datos.appendChild(anio)
+         datos.appendChild(km)
+         datos.appendChild(combustible)
+         datos.appendChild(localidad)
+
+         segundaFila.appendChild(datos)
+
+         contenedor.appendChild(primeraFila)
+         contenedor.appendChild(segundaFila)
+
+         tarjeta.appendChild(espacioIm)
+         tarjeta.appendChild(contenedor)
+
+         enlace.appendChild(tarjeta)
+
+         header[0].parentNode.insertBefore(enlace, header[0].nextSibling)
+     }
+}
+
 
 function tiempo(){
    setTimeout(buscar, 500)
@@ -344,6 +442,10 @@ function tiempo(){
 
 function favoritos(){
    setTimeout(guardarFavoritos, 500)
+}
+
+function cargarResultados(){
+   setTimeout(resultados,500)
 }
 
 function encontrarVehiculo(nombre){

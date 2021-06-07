@@ -1,0 +1,250 @@
+#menu-navegacion{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #D90429;
+}
+
+#menu-navegacion #logo{
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+#menu{
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+    margin-top: 35px;
+    display: none;
+}
+
+footer{
+    background-color: #2B2D42;
+    color: #707070;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#texto-footer{
+    font-weight: bold;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+a:link{
+    text-decoration: none;
+}
+
+a:visited{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+.espacio-boton{
+    margin-top: 30vh;
+    margin-bottom: 65px;
+    display: flex;
+    justify-content: center;
+}
+
+.boton{
+    background-color: #EF233C;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: 0.3s;
+    padding: 14px 50px;
+    font-size: 18px
+}
+
+.boton:hover{
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+#menu{
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+    margin-top: 35px;
+    display: none;
+}
+
+.descripcion{
+    margin-top: 15px;
+    text-align: center;
+}
+
+#titulo-descripcion{
+    font-size: 28px;
+    color: #2B2D42;
+    font-weight: bold;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border-bottom: 2.5px solid #2B2D42;
+}
+
+.descripcion-vehiculo{
+    margin: auto;
+    display: block;
+    margin-top: 10px;
+    width: 84vw;
+    height: 35vh;
+    background-color: lightgray;
+    border: 1px solid;
+    border-radius: 14px;   
+}
+
+.datos-tecnicos{
+    margin-top: 15px;
+    text-align: center;
+    padding: 0 15px;
+}
+
+.nombre-vehiculo{
+    font-weight: bold;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0 12vw;
+}
+
+#datos{
+    font-size: 28px;
+    color: #2B2D42;
+    font-weight: bold;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border-bottom: 2.5px solid #2B2D42;
+}
+
+.contenedor{
+    margin: auto;
+    display: block;
+    margin-top: 10px;
+    width: 84vw;
+    height: 35vh;
+    background-color: lightgray;
+    border: 1px solid;
+    border-radius: 14px;
+}
+
+.fila{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contenedor span{
+    font-weight: bold;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.dato{
+    color: #EF233C;
+    margin-top: 7px;
+}
+
+#fila-uno{
+    margin: 0px 8px;
+    margin-top: 10px;
+}
+
+#fila-dos{
+    margin: 0px 8px;
+    margin-top: 40px;
+}
+
+.campo{
+    display: flex;
+}
+
+.campo img{
+    width: 50px;
+    height: 50px;
+}
+
+.nombre-campo{
+    margin-left: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+#menu{
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+    margin-top: 35px;
+    display: none;
+}
+
+@media screen and (max-width: 576px) {
+
+    .contenedor{
+        margin: auto;
+        display: block;
+        width: 100%;
+        height: 68vh;
+    }
+
+    .descripcion{
+        padding: 0 15px;
+    }
+
+    .descripcion-vehiculo{
+        margin: auto;
+        display: block;
+        width: 100%;
+        height: 85vh;
+    }
+
+    .nombre-vehiculo{
+        padding: 0 15px;
+    }
+
+    #datos{
+        font-size: 20px;
+        margin: auto;
+        margin-top: 35px;
+    }
+
+    #titulo-descripcion{
+        font-size: 20px;
+        margin: auto;
+        margin-top: 35px;
+    }
+
+    .fila{
+        display: block;
+    }
+
+    .primer-coche{
+        margin: 30px 0px;
+    }
+
+    #menu{
+        display: block;
+    }
+
+    #flechas{
+        transform: rotate(90deg);
+        margin-left: 35%;
+    }
+
+    #fila-dos{
+        margin: 0px 8px;
+    }
+
+    .campo{
+        margin-top: 7px;
+        border-bottom: 1px solid;
+    }
+
+    .campo img{
+        width: 32px;
+        height: 32px;
+    }
+
+    .campo span{
+        font-size: 14px;
+    }
+    
+}
